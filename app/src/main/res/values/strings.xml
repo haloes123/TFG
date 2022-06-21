@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RemindSubs</string>
+    <string name="Registro"><u>Registrate</u></string>
+    <string name="Email">E-mail</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="nombreServicio">Nombre servicio</string>
+    <string name="planServicio">Plan</string>
+    <string name="precioServicio">Precio</string>
+    <string name="tipoSuscripcion">Tipo</string>
+    <string name="estado">Estado</string>
+</resources>

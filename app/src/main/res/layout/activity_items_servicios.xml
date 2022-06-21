@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlogin"
+    tools:context=".ItemsServicios">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="358dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TituloNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:text="Nombre del Servicio:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TituloPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PrecioServicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:text="Precio"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TituloPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PlanServicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="text"
+                android:text="Plan"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TituloTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TipoServicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="text"
+                android:text="Tipo"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TituloEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EstadoServicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:inputType="text"
+                android:text="Estado"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TituloFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <DatePicker
+                android:id="@+id/fechaNotificacion"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="#2A000000"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TituloHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TimePicker
+                android:id="@+id/tiempoNotificacion"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:background="#2A000000"
+                android:timePickerMode="spinner"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:layout_marginStart="19dp"
+                android:elevation="100dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="submit"
+                android:src="@drawable/ic_baseline_save_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.995" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
